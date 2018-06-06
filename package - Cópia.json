@@ -1,0 +1,24 @@
+{
+  "name": "projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "font-awesome": "^4.7.0",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "npm-sass": "^4.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo Iniciando",
+    "prestart": "echo Executando",
+    "poststart": "echo Finalizando",
+    "preinstall": "mkdirp src/components/bootstrap/ src/components/font-awesome/",
+    "postinstall": "cp -r node_modules/bootstrap/dist src/components/bootstrap/ && cp -r node_modules/font-awesome/css src/components/font-awesome/ && cp -r node_modules/font-awesome/fonts src/components/font-awesome/"
+  },
+  "author": "Dsprog<dsprog@gmail.com>",
+  "license": "ISC"
+}
